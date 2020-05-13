@@ -56,14 +56,14 @@ body {
 .btn.correct {
   background-color: hsl(120, 100%, 15%);
   /* --hue: var(--hue-correct); */
-  transition-delay: 1s;
-  transition-duration: 1.5s;
+  transition-delay: 0.8s;
+  transition-duration: 1s;
   animation: blinker 1s linear;
 }
 .btn.wrong {
   --hue: var(--hue-wrong);
-  transition-delay: 1s;
-  transition-duration: 1.5s;
+  transition-delay: 0.8s;
+  transition-duration: 1s;
   animation: blinker 1s linear;
 }
 @keyframes blinker {
