@@ -95,10 +95,10 @@ function selectAnswer(e) {
       setStatusClass(selectedButton, correct);
       button.disabled = true;
 
-      scored.innerText = "Your Score " + score;
+      scored.innerText = "Score " + score;
     } else {
       setStatusClass(selectedButton, correct);
-      scored.innerText = "Your Score " + score;
+      scored.innerText = " Score " + score;
       if (button.dataset.correct) {
         setStatusClass(button, button.dataset.correct);
         // setStatusClass(button, button.dataset.correct)

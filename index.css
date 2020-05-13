@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 
 :root {
@@ -94,9 +94,10 @@ body {
   position: absolute;
   /* bottom: 40%; */
   top: 10%;
-  left: 90%;
+  /* left: 90%; */
   width: 70px;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 #top {
