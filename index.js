@@ -5,11 +5,13 @@ const scored = document.getElementById("score");
 
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
+const jag = document.getElementById("top");
 var j = 0;
 var i = 0;
 let score = 0;
 
 let shuffleQuestions, currentQuestionIndex;
+jag.classList.remove("hide");
 
 startButton.addEventListener("click", startGame);
 // i++;
@@ -25,6 +27,7 @@ nextButton.addEventListener("click", () => {
   // if (i == 5) mode();
 });
 function startGame() {
+  jag.classList.add("hide");
   // i++;
   // console.log(i);
   startButton.classList.add("hide");
@@ -55,6 +58,7 @@ function showQuestion(question) {
       button.dataset.correct = answer.correct;
     }
     button.addEventListener("click", selectAnswer);
+    answerButtonsElement.classList.remove("hide");
 
     // if (i == 5) {
     //   mode();
@@ -129,7 +133,9 @@ function selectAnswer(e) {
     // resetState();
 
     // questionContainerElement.classList.add("hide");
-    questionElement.innerText = "you scored " + score + "/5";
+    answerButtonsElement.classList.add("hide");
+    questionElement.innerHTML =
+      " Congratulations &#128079; you scored " + score + "/5";
 
     // "Congratulations!! you scored" + score + "/5";
 
@@ -143,9 +149,11 @@ function selectAnswer(e) {
     // }
 
     startButton.classList.remove("hide");
+
     score = 0;
     scored.innerText = "";
   }
+  // answerButtonsElement.classList.remove("hide");
   scored.classList.remove("hide");
   // startButton.addEventListener("click", startGame);
   // startButton.classList.add("hide");
