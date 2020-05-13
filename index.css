@@ -89,8 +89,8 @@ body {
   display: none;
 }
 #score {
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  color: white;
   position: absolute;
   /* bottom: 40%; */
   top: 10%;
